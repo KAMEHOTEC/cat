@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Коты</title>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+
+    <link rel="shortcut icon" href="https://c0.klipartz.com/pngpicture/823/859/gratis-png-los-gatos.png"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="catstyle.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <ul id="ul">
+                <li><a href="#" onclick="hide('history')">Главная</a></li>
+                <li><a href="#" onclick="hide('mario')">Марио</a></li>
+                <li><a href="#" onclick="hide('saimon')">Саймон</a></li>
+                <li><a href="#" onclick="hide('nensi')">Ненси</a></li>
+                <li><a href="#" onclick="hide('margo')">Марго</a></li>
+                <li class=" kitties "><a href="#">Котята</a>
+                    <div class="drop">
+                        <a onclick="hide('kitties-0225')" href="#">Февраль 2025</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <history class="cat" id="history">
+        <h1>Лента</h1>
+        <div class="blok">
+            <date>05.05.2025</date><br>
+            <img src="https://i.ibb.co/wh4gx7Mh/20205.jpg" alt="Марго и рыжийБ" class="zoomable-image margo rr-0225 "
+                onclick="toggleZoom(this)">
+            <img src="https://i.ibb.co/tMPwXhNh/2025.jpg" alt="Два рыжих"
+                class="zoomable-image rr-0225 rb-0225 kitties-0225" onclick="toggleZoom(this)">
+            <p style="display: inline;">Рыжие котята и <span class="image-tooltip" data-image="margo">Марго</span></p>
+        </div>
+        <div class="blok">
+            <date>01.05.2025</date><br>
+            <img src="https://github.com/KAMEHOTEC/solar-system-static/blob/main/%D0%9C%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D1%8C.jpg?raw=true"
+                alt="Кот Марсель" class="zoomable-image" onclick="toggleZoom(this)">
+            <img src="https://i.ibb.co/5XJbLDq1/2025.jpg" alt="Саймон" class="zoomable-image saimon"
+                onclick="toggleZoom(this)">
+            <p style="display: inline;"> Кот Марсель (один из котят 2024 года) и <span class="image-tooltip"
+                    data-image="saimon">Саймон</span></p>
+        </div>
+        <div class="blok">
+            <date>01.05.2025</date><br>
+            <img src="https://github.com/KAMEHOTEC/solar-system-static/blob/main/%D0%A1%D0%B0%D0%B9%D0%BC%D0%BE%D0%BD,%20%D0%BD%D0%B5%D0%BD%D1%81%D0%B8%20%D0%B8%20%D0%BC%D0%B0%D1%80%D0%B8%D0%BE%20-%20%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C%202024.jpg?raw=true"
+                alt="Саймон, марио и ненси" class="zoomable-image mario nensi saimon" onclick="toggleZoom(this)">
+            <p style="display: inline;"> <span class="image-tooltip" data-image="saimon"> Саймон</span>, <span
+                    class="image-tooltip" data-image="mario">Марио</span> и <span class="image-tooltip"
+                    data-image="nensi">Ненси</span>
+                (ноябрь 2024)</span></p>
+        </div>
+        <div class="blok">
+            <date>01.05.2025</date><br>
+            <img src="https://i.ibb.co/kfGgHh2/2-2025.jpg" alt="Черепахи две"
+                class="zoomable-image  kitties kitties-0225 chch-0225 chb-0225" onclick="toggleZoom(this)">
+            <img src="https://i.ibb.co/673qqmP0/0225.jpg" alt="Черепаха с чёрными"
+                class="zoomable-image  kitties kitties-0225 chch-0225" onclick="toggleZoom(this)">
+            <img src="https://i.ibb.co/bjmGN9g3/1-2025.jpg" alt="Рыжий и черепаха"
+                class="zoomable-image  kitties kitties-0225 chb-0225 rb-0225" onclick="toggleZoom(this)">
+        </div>
+        <div class="blok chb-0225">
+            <date>28.04.2025</date>
+            <p> 28.04.2025 - Забрали <span class="image-tooltip" data-image="chb-0225">черепаховую</span>
+                с белыми лапами</p>
+        </div>
+        <div class="blok">
+            <date>22.04.2025</date><br>
+            <img src="https://i.ibb.co/Fkt37kMx/2-2025.jpg" alt="Черепахач"
+                class="zoomable-image  kitties kitties-0225 chch-0225" onclick="toggleZoom(this)">
+            <img src="https://i.ibb.co/ZpKt8r1g/1-2024.jpg" alt="Черепахаб"
+                class="zoomable-image  kitties kitties-0225 chb-0225" onclick="toggleZoom(this)">
+            <img src="https://i.ibb.co/gFHbRNj2/2025.jpg" alt="РыжийР"
+                class="zoomable-image  kitties kitties-0225 rr-0225" onclick="toggleZoom(this)">
+            <img src="https://i.ibb.co/gHmWc86/image.jpg" alt="Голубой"
+                class="zoomable-image  kitties kitties-0225 g-0225" onclick="toggleZoom(this)">
+            <img src="https://i.ibb.co/qLDLNVcT/2024-2.jpg" alt="Рыжий с белыми лапками"
+                class="zoomable-image  kitties kitties-0225 rb-0225" onclick="toggleZoom(this)">
+        </div>
+        <div class="blok g-0225">
+            <date>22.04.2025</date>
+            <p> 15.04.2025 - <span class="image-tooltip" data-image='g-0225'>Голубого котёнка
+                </span> забрали</p>
+        </div>
+        <div class="blok">
+            <date>22.04.2025</date>
+            <p> 14.04.2025 - Вакцинация 5 котят</p>
+        </div>
+        <div class="blok">
+            <date>22.04.2025</date>
+            <p> 14.02.2025 - Рождение котят: 2 рыжих, 2 черепаховых и 1 голубой</p>
+        </div>
+    </history>
+    <kot class="cat bio" id="kot">
+        <h1 id="catname">Марио</h1>
+        <div class="conteyner">
+            <img id='urlfoto' alt="Марио" class="zoomable-image" onclick="toggleZoom(this)">
+            <div class="infa_o_kote">
+                <p id="birthday">Дата рождения: </p>
+                <p id="sex">Пол: </p>
+                <p id="color">Окрас: </p>
+                <p id="dopinfa">Доп инфа: </p>
+            </div>
+        </div>
+    </kot>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="catscript.js"> </script>
+
+
+</body>
+
+</html>
