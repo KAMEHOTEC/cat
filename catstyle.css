@@ -1,0 +1,293 @@
+* {
+    font-size: 15px;
+    margin: 0;
+
+}
+
+body {
+    background-image: url('https://grizly.club/sec2/uploads/posts/2024-02/grizly-club-p-krasivii-fon-s-kotom-11.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#ul {
+    display: flex;
+    list-style: none;
+    background: linear-gradient(135deg, #00f7ff, #0084ff);
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    position: relative;
+    margin: 0;
+}
+
+li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: block;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+li:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-0.25rem);
+}
+
+li a:active {
+    transform: translateY(0);
+}
+
+.kitties:hover .drop {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+.drop {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.drop a {
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s;
+}
+
+.drop a:hover {
+    background-color: #f0f8ff;
+    color: #0066cc;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.div a:hover li {
+    color: red
+}
+
+.cat h1 {
+    font-size: 3rem;
+    width: 25rem;
+    background-color: chartreuse;
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    margin-left: 0;
+    text-align: center;
+    border-radius: 80%;
+    color: #5e3a00;
+    font-family: 'Times New Roman', serif;
+    border: 8px double #c9a66b;
+    border-radius: 3rem;
+    background: #f8f1e0;
+    position: relative;
+
+}
+
+#history {
+    display: block;
+}
+
+.cat {
+    display: none;
+}
+
+.cat p,
+.cat span {
+
+    font-size: 2rem;
+
+}
+
+span.image-tooltip {
+    cursor: cell;
+    color: rgba(24, 5, 19, 0.781);
+    background: linear-gradient(90deg, #fd5454, #a0eee9, #30cef1, #c73e3e);
+    background-size: 200% 100%;
+    /* Для плавной анимации */
+    border-radius: 5px;
+    /* Скругленные углы (опционально) */
+    transition: all 0.3s ease;
+    /* Плавность при наведении */
+    animation: gradientShift 3s ease infinite;
+    /* Анимация перелива */
+}
+
+span.image-tooltip:hover {
+    transform: scale(1.05);
+    /* Легкое увеличение */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Тень */
+}
+
+
+.cat date {
+    font-size: 1.8rem;
+    background-color: darkseagreen;
+    color: rgb(20, 23, 230);
+
+}
+
+.bio img {
+    border: 2px outset #af037b;
+}
+
+.blok {
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid red;
+    position: relative;
+
+}
+
+span {
+    margin: 0;
+    padding: 0;
+}
+
+.blok:hover P {
+
+    color: rgb(216, 3, 38)
+}
+
+.blok::before {
+    content: "";
+    /* Обязательно! */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: chartreuse;
+    opacity: 0.23;
+    z-index: -1;
+    position: absolute;
+}
+
+div img {
+    max-height: 15vw;
+    /* 20% от ширины viewport (экрана) */
+    width: auto;
+    cursor: pointer;
+}
+
+.zoomable-image {
+    max-height: 15vw;
+    /* 20% от ширины viewport (экрана) */
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Плавное увеличение */
+}
+
+.zoomable-image.zoomed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.9);
+    max-height: none;
+    cursor: grab;
+}
+
+.conteyner {
+    display: flex;
+    /* Используем flexbox для расположения элементов в ряд */
+    align-items: flex-start;
+    /* Выравнивание элементов по верхнему краю */
+    gap: 1rem;
+    /* Расстояние между изображением и текстом */
+}
+
+.infa_o_kote {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.infa_o_kote p {
+    font-size: 3rem;
+}
+
+.tippy-box {
+    /*подсказка*/
+    display: block !important;
+    /* Переопределите, если нужно */
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 1068px) {
+
+    /* Стили для экранов меньше 768px */
+    .infa_o_kote p {
+        font-size: 3rem;
+    }
+
+    img.zoomable-image {
+        max-width: 100rem;
+        max-height: 100rem;
+        width: auto;
+        height: 22rem;
+
+    }
+
+    .kitties:active .drop {
+        display: block;
+        list-style: none;
+        text-decoration: none;
+    }
+
+}
